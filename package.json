@@ -1,0 +1,11 @@
+{
+  "name": "vue-loader-wont-hot-reload-text-nodes",
+  "description": "A demo for a bug where vue-loader won't hot reload text nodes",
+  "author": "nskazki@gmail.com",
+  "version": "0.0.1",
+  "license": "MIT",
+  "homepage": "https://github.com/nskazki/vue-loader-wont-hot-reload-text-nodes",
+  "scripts": {
+
+  }
+}
