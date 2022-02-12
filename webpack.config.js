@@ -8,7 +8,8 @@ module.exports = {
   module: {
     rules: [{
       test: /\.vue$/,
-      loader: 'vue-loader'
+      loader: 'vue-loader',
+      sideEffects: false
     }]
   },
   plugins: [
