@@ -1,26 +1,22 @@
 <template>
   <div>
     <p>
-      I'm text! If you edit me, HMR won't apply the change!
+      Hello from the root component!
+      HMR won't apply any changes made to this component as long as the sideEffects option is set.
+      The problem is that without this option, unused components won't be tree-shaked if they're re-exported along with used components via a common proxy.
+      src/Namespace/index.js is an example of such a proxy.
     </p>
-    <p>
-      {{ dynamicText }}
-    </p>
-    <nested-component />
+    <hr />
+    <used-component />
   </div>
 </template>
 
 <script>
-import NestedComponent from './NestedComponent.vue'
+import { UsedComponent } from './Namespace'
 
 export default {
   components: {
-    NestedComponent
-  },
-  data() {
-    return {
-      dynamicText: 'Some dynamic root test'
-    }
+    UsedComponent
   }
 }
 </script>
