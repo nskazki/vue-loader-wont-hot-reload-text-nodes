@@ -1,9 +1,9 @@
 <template>
   <div>
     <p>
-      Hello from the nested component!
-      HMR won't update text nodes when the sideEffects option is set!
-      However, it will update the dynamic text and tags should you change them.
+      Hello from the child component!
+      If you change an existing line of text, a tag, or component, HMR will ignore that.
+      If you add a new line, tag, or component, or remove an existing one completely, HMR will reflect that.
     </p>
     <p>
       {{ dynamicText }}
