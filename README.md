@@ -1,6 +1,6 @@
 # Issue
 
-HMR won't update SFC compiled with `vue-loader@15.9.8` when [`sideEffect=false`](https://webpack.js.org/guides/tree-shaking/#clarifying-tree-shaking-and-sideeffects) is used.
+https://github.com/vuejs/vue-loader/issues/1929 - HMR won't update SFC compiled with `vue-loader@15.9.8` when [`sideEffect=false`](https://webpack.js.org/guides/tree-shaking/#clarifying-tree-shaking-and-sideeffects) is used.
 
 ```js
 module.exports = {
